@@ -40,9 +40,9 @@ if (isset($_POST['chk_id']))
 						<tbody>
 							<?php
 								echo'<br/><br/>';
-							
-							$stmt=$product->getProducts();
 							$product=new Book($db, [], []);
+							$stmt=$product->getProducts();
+							
 							
 							$book='book';
 							$disk='dvd-disk';
